@@ -1,0 +1,42 @@
+body {
+  background-image: url("../img/stucco.jpg");
+}
+
+h1, h2 {
+  font-family: 'Abel', sans-serif;
+  font-weight: bold;
+}
+
+.navbar {
+  margin-bottom: 0px;
+  border-radius: 0px;
+}
+
+.container.header {
+  float: left;
+}
+
+.container.header p {
+  color: white;
+  font-family: 'Amatica SC', cursive;
+  font-size: 115px;
+  font-weight: bolder;
+}
+
+@media screen and (max-width: 1024px) {
+  .container.header p {
+    font-size: 100px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container.header p {
+    font-size: 75px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .container.header p {
+    font-size: 50px;
+  }
+}
