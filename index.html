@@ -55,14 +55,14 @@
                 <h2>Size</h2>
                   <label for="selected-size-input">Please select one size</label>
                   <select class="form-control" id="selected-size-input">
-                    <option>Small (10") | starting at $8</option>
-                    <option>Medium (12") | starting at $10</option>
-                    <option>Large (14") | starting at $12</option>
-                    <option>Extra Large (16") | starting at $14</option>
-                    <option>Sicilian (18") | starting at $16</option>
+                    <option>SMALL (10") from $8.00+</option>
+                    <option>MEDIUM (12") .. from $10.00+</option>
+                    <option>LARGE (14") ..from $12.00+</option>
+                    <option>EXTRA-LARGE (16") .. from $14.00+</option>
+                    <option>SICILIAN (18") ..from $16.00+</option>
                   </select>
                 </div>
-                <button type="submit" class="btn btn-danger btn">Add to My Order</button>
+                <button id="input-order" type="submit" class="btn btn-danger btn">Add to My Order</button>
               </div>
             </div>
           </form>
@@ -72,13 +72,14 @@
           <div id="current-order-details">
           <h1>Current Order:</h1>
             <h4>Selected Size:</h4>
-              <p id="chosen-size-displayed">Small (10") | Starting at $8</p>
+              <p id="chosen-size-displayed"></p>
             <h4>Selected Toppings:</h4>
               <ul id="chosen-toppings-displayed">Example</ul>
             <h4>Order Total:</h4>
               <p id="calculated-cost">$ 11.99</p>
           <div>
-          <button id="submit-order" type="submit" class="btn btn-success btn">Submit Order</button>
+            <!-- use click function for this button -->
+          <button id="submit-order" class="btn btn-success btn">Submit Order</button>
         </div>
       </div>
     </div>

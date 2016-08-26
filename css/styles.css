@@ -40,3 +40,8 @@ h1, h2 {
     font-size: 50px;
   }
 }
+
+#current-order-details p {
+  color: #d43f3a;
+  font-weight: bold;
+}
