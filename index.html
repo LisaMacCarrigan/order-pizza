@@ -9,33 +9,69 @@
     <script src="js/jquery-3.1.0.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/scripts.js"></script>
-    <title>Lisa's Pizza Pies</title>
+    <title>Lisa's Pizzas</title>
   </head>
   <body>
     <nav class="navbar navbar-inverse navbar-top">
       <div class="container header">
         <!-- <img id="tomato" src="img/svg/tomato.svg"> -->
-        <p>Lisa's Pizza Pies</p>
+        <p>Lisa's Pizzas</p>
       </div>
     </nav>
     <div class="container">
       <div class="row">
         <div class="col-xs-8">
           <h1>Choose Your Options</h1>
+          <h4>Every pizza comes standard with nonni's ancient tomato sauce recipe and our famous blend of cheeses... straight from Italia!</h4>
           <form id="pizza-order">
             <div class="row">
               <div class="col-xs-6">
-                <h2>Select Toppings</h2>
+                <div class="form-group">
+                  <h2>Toppings</h2>
+                  <h5><strong>Each topping is $.50</strong></h5>
+                  <div class="checkbox">
+                    <label><input type="checkbox" value="">Bacon</label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input type="checkbox" value="">Broccoli</label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input type="checkbox" value="">Mushroom</label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input type="checkbox" value="">Onion</label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input type="checkbox" value="">Tomato</label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input type="checkbox" value="">Extra Cheese</label>
+                  </div>
+                </div>
               </div>
 
               <div class="col-xs-6">
-                <h2>Select Size</h2>
+                <div class="form-group">
+                <h2>Size</h2>
+                  <label for="selected-size">Please select one size</label>
+                  <select class="form-control" id="selected-size">
+                    <option>Small (10") | starting at $8</option>
+                    <option>Medium (12") | starting at $10</option>
+                    <option>Large (14") | starting at $12</option>
+                    <option>Extra Large (16") | starting at $14</option>
+                    <option>Sicilian (18") | starting at $16</option>
+                  </select>
+                </div>
+                <button type="submit" class="btn btn-danger btn">Add to My Order</button>
               </div>
             </div>
           </form>
+
         </div>
         <div class="col-sm-4">
           <h1>Selected</h1>
+          <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4>
+          <button type="submit" class="btn btn-success btn-lg">Submit Order</button>
         </div>
       </div>
     </div>
