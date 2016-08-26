@@ -10,10 +10,12 @@ _This is a website for a pizza company where a user can choose one or more indiv
 
 ## Specifications
 
-#### 1. Do nothing to non-numeric input (i.e. letters and special characters).
+#### 1. A user can select one size pizza and add the selection to their order.
 
-* Example Input:
-* Example Output:
+* Example Input: Select option "Small (10") starting at $8" and Select button "Add to My Order"
+* Example Output: Current Order:
+                  Selected Size:
+                  Small (10") | Starting at $8
 
 #### 2.
 

@@ -18,43 +18,43 @@
         <p>Lisa's Pizzas</p>
       </div>
     </nav>
-    <div class="container">
+    <div class="container-fluid">
       <div class="row">
         <div class="col-xs-8">
           <h1>Choose Your Options</h1>
-          <h4>Every pizza comes standard with nonni's ancient tomato sauce recipe and our famous blend of cheeses... straight from Italia!</h4>
+          <h4>Every pizza comes standard with Nonni's tomato sauce and our famous blend of cheeses. We support local farmers and use only the finest, freshest, sustainably-sourced ingredients.</h4>
           <form id="pizza-order">
             <div class="row">
               <div class="col-xs-6">
-                <div class="form-group">
-                  <h2>Toppings</h2>
-                  <h5><strong>Each topping is $.50</strong></h5>
+                <div class="form-group toppings">
+                  <h2>Toppings (optional)</h2>
+                  <h5><strong>Each topping is $.50 extra</strong></h5>
                   <div class="checkbox">
-                    <label><input type="checkbox" value="">Bacon</label>
+                    <label><input id="choose-bacon" type="checkbox" value="bacon">Bacon</label>
                   </div>
                   <div class="checkbox">
-                    <label><input type="checkbox" value="">Broccoli</label>
+                    <label><input id="choose-broccoli" type="checkbox" value="broccoli">Broccoli</label>
                   </div>
                   <div class="checkbox">
-                    <label><input type="checkbox" value="">Mushroom</label>
+                    <label><input id="choose-mushroom" type="checkbox" value="mushroom">Mushroom</label>
                   </div>
                   <div class="checkbox">
-                    <label><input type="checkbox" value="">Onion</label>
+                    <label><input id="choose-onion" type="checkbox" value="onion">Onion</label>
                   </div>
                   <div class="checkbox">
-                    <label><input type="checkbox" value="">Tomato</label>
+                    <label><input id="choose-tomato" type="checkbox" value="tomato">Tomato</label>
                   </div>
                   <div class="checkbox">
-                    <label><input type="checkbox" value="">Extra Cheese</label>
+                    <label><input id="choose-extra-cheese" type="checkbox" value="extra-cheese">Extra Cheese</label>
                   </div>
                 </div>
               </div>
 
               <div class="col-xs-6">
-                <div class="form-group">
+                <div class="form-group sizes">
                 <h2>Size</h2>
-                  <label for="selected-size">Please select one size</label>
-                  <select class="form-control" id="selected-size">
+                  <label for="selected-size-input">Please select one size</label>
+                  <select class="form-control" id="selected-size-input">
                     <option>Small (10") | starting at $8</option>
                     <option>Medium (12") | starting at $10</option>
                     <option>Large (14") | starting at $12</option>
@@ -68,10 +68,17 @@
           </form>
 
         </div>
-        <div class="col-sm-4">
-          <h1>Selected</h1>
-          <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4>
-          <button type="submit" class="btn btn-success btn-lg">Submit Order</button>
+        <div class="col-xs-4">
+          <div id="current-order-details">
+          <h1>Current Order:</h1>
+            <h4>Selected Size:</h4>
+              <p id="chosen-size-displayed">Small (10") | Starting at $8</p>
+            <h4>Selected Toppings:</h4>
+              <ul id="chosen-toppings-displayed">Example</ul>
+            <h4>Order Total:</h4>
+              <p id="calculated-cost">$ 11.99</p>
+          <div>
+          <button id="submit-order" type="submit" class="btn btn-success btn">Submit Order</button>
         </div>
       </div>
     </div>
