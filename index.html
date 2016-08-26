@@ -8,7 +8,7 @@
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-3.1.0.js"></script>
     <script src="js/bootstrap.js"></script>
-    <script src="js/scripts.js"></script>
+    <script src="js/scripts2.js"></script>
     <title>Lisa's Pizzas</title>
   </head>
   <body>
@@ -30,22 +30,22 @@
                   <h2>Toppings (optional)</h2>
                   <h5><strong>Each topping is $.50 extra</strong></h5>
                   <div class="checkbox">
-                    <label><input id="choose-bacon" type="checkbox" value="bacon">Bacon</label>
+                    <label><input name="topping" type="checkbox" value="Bacon">Bacon</label>
                   </div>
                   <div class="checkbox">
-                    <label><input id="choose-broccoli" type="checkbox" value="broccoli">Broccoli</label>
+                    <label><input id="choose-broccoli" name="topping" type="checkbox" value="Broccoli">Broccoli</label>
                   </div>
                   <div class="checkbox">
-                    <label><input id="choose-mushroom" type="checkbox" value="mushroom">Mushroom</label>
+                    <label><input id="choose-mushroom" name="topping" type="checkbox" value="Mushroom">Mushroom</label>
                   </div>
                   <div class="checkbox">
-                    <label><input id="choose-onion" type="checkbox" value="onion">Onion</label>
+                    <label><input id="choose-onion" name="topping" type="checkbox" value="Onion">Onion</label>
                   </div>
                   <div class="checkbox">
-                    <label><input id="choose-tomato" type="checkbox" value="tomato">Tomato</label>
+                    <label><input id="choose-tomato" name="topping" type="checkbox" value="Tomato">Tomato</label>
                   </div>
                   <div class="checkbox">
-                    <label><input id="choose-extra-cheese" type="checkbox" value="extra-cheese">Extra Cheese</label>
+                    <label><input id="choose-extra-cheese" name="topping" type="checkbox" value="Extra-cheese">Extra Cheese</label>
                   </div>
                 </div>
               </div>
@@ -53,13 +53,13 @@
               <div class="col-xs-6">
                 <div class="form-group sizes">
                 <h2>Size</h2>
-                  <label for="selected-size-input">Please select one size</label>
+                  <label for="selected-size-input">Please select a size</label>
                   <select class="form-control" id="selected-size-input">
-                    <option>SMALL (10") from $8.00+</option>
-                    <option>MEDIUM (12") .. from $10.00+</option>
-                    <option>LARGE (14") ..from $12.00+</option>
-                    <option>EXTRA-LARGE (16") .. from $14.00+</option>
-                    <option>SICILIAN (18") ..from $16.00+</option>
+                    <option value="S">SMALL (10") from $8.00+</option>
+                    <option value"M">MEDIUM (12") .. from $10.00+</option>
+                    <option value="L">LARGE (14") ..from $12.00+</option>
+                    <option value="XL">EXTRA-LARGE (16") .. from $14.00+</option>
+                    <option value="SIC">SICILIAN (18") ..from $16.00+</option>
                   </select>
                 </div>
                 <button id="input-order" type="submit" class="btn btn-danger btn">Add to My Order</button>
@@ -74,7 +74,8 @@
             <h4>Selected Size:</h4>
               <p id="chosen-size-displayed"></p>
             <h4>Selected Toppings:</h4>
-              <ul id="chosen-toppings-displayed">Example</ul>
+              <ul id="chosen-toppings-displayed">
+              </ul>
             <h4>Order Total:</h4>
               <p id="calculated-cost">$ 11.99</p>
           <div>
