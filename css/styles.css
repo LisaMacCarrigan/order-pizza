@@ -8,7 +8,7 @@ body {
 
 h1, h2 {
   font-family: 'Abel', sans-serif;
-  font-weight: bold;
+  font-weight: bolder;
 }
 
 .navbar {
@@ -41,7 +41,13 @@ h1, h2 {
   }
 }
 
+.col-sm-4 {
+  background-color: white;
+  padding: 0px 10px 10px 10px;
+  margin-top: 50px;
+
+}
+
 #current-order-details p {
   color: #d43f3a;
-  font-weight: bold;
 }
