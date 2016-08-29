@@ -1,43 +1,49 @@
 // BUSINESS -BACK-END LOGIC
 // var sizeBasePrices = [8, 10, 12, 14, 16];
-// var toppingOptions = ["Bacon", "Broccoli", "Mushroom", "Onion", "Tomato", "Extra Cheese"];
-// var toppings = []; //maybe push options to this array?
+
 
 // A pizza object constructor with properties for toppings and size.
 function Pizza(toppings, size) {
-  this.pizzaToppings = [];
+  this.pizzaToppings = toppings; //or empy array?
   this.pizzaSize = size;
   this.pizzaCost = 0; //initialize at 0
 }
 
+Pizza.prototype.listToppings = function(toppings) {
+  for (var index = 0; index <= toppings.length; index++);
+    return
+}
+
+
 // A prototype method for the base cost of a pizza determined by the selected size.
-Pizza.prototype.basePrice = function(selectedSize) {
+Pizza.prototype.basePrice = function(size) {
   if (this.pizzaSize === "Small") {
     this.pizzaCost += 8;
   }
-  else if (this.PizzaSize === "Medium") {
+  else if (this.pizzaSize === "Medium") {
     this.pizzaCost += 10;
   }
-  else if (this.PizzaSize === "Large") {
+  else if (this.pizzaSize === "Large") {
     this.pizzaCost += 12;
   }
-  else if (this.PizzaSize === "Extra-large") {
+  else if (this.pizzaSize === "Extra-large") {
     this.pizzaCost += 14;
   }
-  else if (this.PizzaSize === "Sicilian") {
+  else if (this.pizzaSize === "Sicilian") {
     this.pizzaCost += 16;
   }
 }; //end function
 
 // A prototype method for the cost of a pizza depending on the number of toppings chosen.
 Pizza.prototype.toppingsCost = function () {
-  this.pizzaCost = toppingsAmount * 0.50;
+  this.pizzaCost += this.pizzaToppings * 0.50;
 };
 
 
-Pizza.prototype.totalCost = function() {
+// Pizza.prototype.totalCost = function() {
+//
+// };
 
-};
 
 
 
@@ -60,18 +66,17 @@ $(document).ready(function() {
     $(".toppings input[type='checkbox']:checked").each(function(){
         toppingsArray.push($(this).val());
     });
-    // The number of toppings selected
-    var toppingsQuantity = toppingsArray.length;
-    console.log(toppingsQuantity);
+
+
     $("#chosen-toppings-displayed").append(toppingsArray).val(); // test
     console.log(toppingsArray);
+
+    // The number of toppings selected
+    var toppingsQuantity = toppingsArray.length;
 
 
     // A customer can select pizza toppings and see their selected toppings displayed
     // var inputtedToppings = $("input:checkbox[name=topping]:checked").val();
-    // console.log(inputtedToppings); // passed test
-    // $("#chosen-toppings-displayed").append(inputtedToppings).val();
-
 
     var newPizza = new Pizza(toppingsArray, inputtedSize);
     //Take inputtedSize value and pass into function that will determine basePrice

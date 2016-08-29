@@ -12,10 +12,10 @@ _This is a website for a pizza company where a user can choose one or more indiv
 
 #### 1. A customer can select one pizza size and see their selected pizza size displayed.
 
-* Example Input: Select option "Small (10") starting at $8" and Select button "Add to My Order"
+* Example Input: Select option "Small 10"..from $8.00" and Select button "Add to My Order"
 * Example Output: Current Order:
                   Selected Size:
-                  Small (10") | Starting at $8
+                  Small
 
 #### 2. A customer can select one or more toppings and see their selected toppings displayed.
 
