@@ -6,11 +6,6 @@ function Pizza(toppings, size) {
   this.pizzaCost = 0; //initialize at 0
 }
 
-// Pizza.prototype.listToppings = function(toppings) {
-//   for (var index = 0; index <= toppings.length; index++);
-//     return
-// }
-
 // A prototype method that calculates the total cost of the pizza based on the size and the number of toppings.
 Pizza.prototype.totalCost = function() {
   if (this.pizzaSize === "Small") {
@@ -43,9 +38,11 @@ $(document).ready(function() {
     var inputtedSize = $("input:radio[name=size]:checked").val();
     $("#chosen-size-displayed").text(inputtedSize).val();
 
+
+
     // Create an array of checked toppings
     var toppingsArray = [];
-    $(".toppings input[type='checkbox']:checked").each(function(){
+    $(".toppings input[type='checkbox']:checked").each(function() {
         toppingsArray.push($(this).val());
     });
 
