@@ -32,6 +32,7 @@ $(document).ready(function() {
   $("#pizza-order").submit(function(event) {
     event.preventDefault();
 
+    $("button#input-order").text("Update Order");
     $("#chosen-toppings-displayed").text(""); //reset Selected Toppings
 
     // A customer can select one pizza size and see their selected pizza size displayed
@@ -44,7 +45,6 @@ $(document).ready(function() {
         toppingsArray.push($(this).val());
     });
     $("#chosen-toppings-displayed").append(toppingsArray.join(', ')).val();
-    console.log(toppingsArray);
 
     // The number of toppings selected
     var toppingsQuantity = toppingsArray.length;
@@ -57,6 +57,13 @@ $(document).ready(function() {
     $("#calculated-cost").text("$ " + cost);
 
   }); //end submit
+
+  $("#reset-order").click(function() {
+    $("button#input-order").text("Add to Order");
+    $("#chosen-size-displayed").text("");
+    $("#chosen-toppings-displayed").text("");
+    $("#calculated-cost").text("");
+  });
 
   $("#submit-order").click(function() {
     $(".col-sm-8").fadeOut("slow");

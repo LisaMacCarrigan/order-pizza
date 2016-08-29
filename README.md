@@ -12,33 +12,33 @@ _This is a website for a pizza company where a user can choose one or more indiv
 
 #### 1. A customer can select one pizza size and see their selected pizza size displayed.
 
-* Example Input: Select option "Small 10"..from $8.00" and Select button "Add to My Order"
+* Example Input: Select radio button option "Small 10"..from $8.00" and press button "Add to Order"
 * Example Output: Current Order:
                   Selected Size:
                   Small
 
 #### 2. A customer can select one or more toppings and see their selected toppings displayed.
 
-* Example Input #1: Select "Bacon" from Toppings
+* Example Input #1: Select "Bacon" from Toppings and press button "Add to Order"
 * Example Output #1: Current Order:
                   Selected Toppings:
                   Bacon
 
-* Example Input #2: Select "Bacon" and "Broccoli" from Toppings
+* Example Input #2: Select "Bacon" and "Broccoli" from Toppings and press button "Add to Order"
 * Example Output #2: Current Order:
                   Selected Toppings:
                   Bacon
                   Broccoli
 
-#### 3. A customer can see the cost of their order when they press button "Add to My Order"
+#### 3. A customer can see the cost of their order when they press button "Add to Order"
 
-* Example Input: Click/press "Add to My Order"
+* Example Input: Click/press "Add to Order"
 * Example Output: Show the Order Total ($0.00)
 
 #### 4. The order is submitted when the customer presses "Submit Order"
 
 * Example Input: Click/press "Submit Order"
-* Example Output: Show the submitted order
+* Example Output: Display the submitted order summary
 
 ## Setup/Installation Requirements
 

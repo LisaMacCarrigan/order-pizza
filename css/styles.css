@@ -25,7 +25,7 @@ h1, h2, h4 {
 }
 
 .container.header p {
-  color: white;
+  color: #d43f3a;
   font-family: 'Amatica SC', cursive;
   font-size: 115px;
   font-weight: bolder;
@@ -47,6 +47,10 @@ h1, h2, h4 {
   .container.header p {
     font-size: 50px;
   }
+}
+
+.btn {
+  font-size: 14px;
 }
 
 #thank-you {
