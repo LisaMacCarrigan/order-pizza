@@ -1,66 +1,67 @@
-// BUSINESS LOGIC
-var toppingOptions = ["Bacon", "Broccoli", "Mushroom", "Onion", "Tomato", "Extra Cheese"];
-var sizeBasePrices = [8, 10, 12, 14, 16];
-var toppings = [];
-
-//Pizza object constructor with parameters for toppings and size and three properties
-function Pizza (toppings, size) {
-  this.pizzaToppings = toppings;
+// BUSINESS -BACK-END LOGIC
+// A pizza object constructor with properties for toppings and size.
+function Pizza(toppings, size) {
+  this.pizzaToppings = toppings; //or empy array?
   this.pizzaSize = size;
-  this.pizzaCost = size;
+  this.pizzaCost = 0; //initialize at 0
 }
 
-//Prototype method for the cost of a pizza depending on the selections chosen
-Pizza.prototype.costCalc = function(sizeCost, toppingsCost) {
-  this.pizzaCost += sizeCost + toppingsCost;
-}
+// Pizza.prototype.listToppings = function(toppings) {
+//   for (var index = 0; index <= toppings.length; index++);
+//     return
+// }
 
-Pizza.prototype.addPizzaTopping = function(toppings) {
-  this.pizzaToppings.push(toppings);
-}
-
-//Determine the number of toppings selected
-var toppingCount = function(topping) {
-  var toppingArray = [];
-
-  for (var i = 0; i <= toppingArray.length; i++) {
-    toppingArray.push(i);
+// A prototype method that calculates the total cost of the pizza based on the size and the number of toppings.
+Pizza.prototype.totalCost = function() {
+  if (this.pizzaSize === "Small") {
+    this.pizzaCost += 8 + (this.pizzaToppings.length * 0.50);
   }
-};
-// USER INTERFACE LOGIC
+  else if (this.pizzaSize === "Medium") {
+    this.pizzaCost += 10 + (this.pizzaToppings.length * 0.50);
+  }
+  else if (this.pizzaSize === "Large") {
+    this.pizzaCost += 12 + (this.pizzaToppings.length * 0.50);
+  }
+  else if (this.pizzaSize === "Extra-large") {
+    this.pizzaCost += 14 + (this.pizzaToppings.length * 0.50);
+  }
+  else if (this.pizzaSize === "Sicilian") {
+    this.pizzaCost += 16 + (this.pizzaToppings.length * 0.50);
+  }
+}; //end function
 
+// USER INTERFACE - FRONT-END LOGIC
 
 $(document).ready(function() {
+    // Submit selected options
   $("#pizza-order").submit(function(event) {
     event.preventDefault();
 
-    var userToppings = [];
+    $("#chosen-toppings-displayed").text(""); //reset Selected Toppings
 
-    userToppings = $("input[name=topping]:checked").each(function(toppingCount) {
-      userToppings.push($(this)val());
-    });
-    console.log(userToppings);
-
-    $("#chosen-toppings-displayed").text("");
-    $("#chosen-toppings-displayed").append("<li><span>" + userToppings + "</span></li>");
-
-    // A customer can select one pizza size and see their selected pizza size displayed.
-    var inputtedSize = $("#selected-size-input").val();
-    console.log(inputtedSize); // passed test
+    // A customer can select one pizza size and see their selected pizza size displayed
+    var inputtedSize = $("input:radio[name=size]:checked").val();
     $("#chosen-size-displayed").text(inputtedSize).val();
 
-    var aPizza = new Pizza (userToppings, inputtedSize);
-    console.log(aPizza);
-
-
-    // Display Total Order cost
-    $("#calculated-cost").text("$ " + aPizza.pizzaCost);
+    // Create an array of checked toppings
+    var toppingsArray = [];
+    $(".toppings input[type='checkbox']:checked").each(function(){
+        toppingsArray.push($(this).val());
     });
+
+    $("#chosen-toppings-displayed").append(toppingsArray).val(); // test
+    console.log(toppingsArray);
+
+    // The number of toppings selected
+    var toppingsQuantity = toppingsArray.length;
+
+    var newPizza = new Pizza(toppingsArray, inputtedSize);
+    //Take inputtedSize value and pass into function that will determine basePrice
+    newPizza.totalCost(); // REMEMBER TO PARSE FLOAT***
+    console.log(newPizza.pizzaCost);
+    $("#calculated-cost").text("$ " + newPizza.pizzaCost);
+
   }); //end submit
 
-  $("#submit-order").click(function) {
-    alert("Thank you for your order");
-    //show summary of order or something similar
-  };
 
 }); //end ready
