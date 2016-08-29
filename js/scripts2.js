@@ -1,7 +1,4 @@
 // BUSINESS -BACK-END LOGIC
-// var sizeBasePrices = [8, 10, 12, 14, 16];
-
-
 // A pizza object constructor with properties for toppings and size.
 function Pizza(toppings, size) {
   this.pizzaToppings = toppings; //or empy array?
@@ -9,46 +6,31 @@ function Pizza(toppings, size) {
   this.pizzaCost = 0; //initialize at 0
 }
 
-Pizza.prototype.listToppings = function(toppings) {
-  for (var index = 0; index <= toppings.length; index++);
-    return
-}
+// Pizza.prototype.listToppings = function(toppings) {
+//   for (var index = 0; index <= toppings.length; index++);
+//     return
+// }
 
-
-// A prototype method for the base cost of a pizza determined by the selected size.
-Pizza.prototype.basePrice = function(size) {
+// A prototype method that calculates the total cost of the pizza based on the size and the number of toppings.
+Pizza.prototype.totalCost = function() {
   if (this.pizzaSize === "Small") {
-    this.pizzaCost += 8;
+    this.pizzaCost += 8 + (this.pizzaToppings.length * 0.50);
   }
   else if (this.pizzaSize === "Medium") {
-    this.pizzaCost += 10;
+    this.pizzaCost += 10 + (this.pizzaToppings.length * 0.50);
   }
   else if (this.pizzaSize === "Large") {
-    this.pizzaCost += 12;
+    this.pizzaCost += 12 + (this.pizzaToppings.length * 0.50);
   }
   else if (this.pizzaSize === "Extra-large") {
-    this.pizzaCost += 14;
+    this.pizzaCost += 14 + (this.pizzaToppings.length * 0.50);
   }
   else if (this.pizzaSize === "Sicilian") {
-    this.pizzaCost += 16;
+    this.pizzaCost += 16 + (this.pizzaToppings.length * 0.50);
   }
 }; //end function
 
-// A prototype method for the cost of a pizza depending on the number of toppings chosen.
-Pizza.prototype.toppingsCost = function () {
-  this.pizzaCost += this.pizzaToppings * 0.50;
-};
-
-
-// Pizza.prototype.totalCost = function() {
-//
-// };
-
-
-
-
 // USER INTERFACE - FRONT-END LOGIC
-
 
 $(document).ready(function() {
     // Submit selected options
@@ -67,20 +49,15 @@ $(document).ready(function() {
         toppingsArray.push($(this).val());
     });
 
-
     $("#chosen-toppings-displayed").append(toppingsArray).val(); // test
     console.log(toppingsArray);
 
     // The number of toppings selected
     var toppingsQuantity = toppingsArray.length;
 
-
-    // A customer can select pizza toppings and see their selected toppings displayed
-    // var inputtedToppings = $("input:checkbox[name=topping]:checked").val();
-
     var newPizza = new Pizza(toppingsArray, inputtedSize);
     //Take inputtedSize value and pass into function that will determine basePrice
-    newPizza.basePrice(); // REMEMBER TO PARSE FLOAT***
+    newPizza.totalCost(); // REMEMBER TO PARSE FLOAT***
     console.log(newPizza.pizzaCost);
     $("#calculated-cost").text("$ " + newPizza.pizzaCost);
   }); //end submit
