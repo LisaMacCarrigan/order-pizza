@@ -25,13 +25,18 @@ h1, h2, h4 {
 }
 
 .container.header p {
-  color: #d43f3a;
-  font-family: 'Clicker Script', sans-serif;
-  font-size: 100px;
+  color: #f2f2f2;
+  font-family: 'IM Fell Double Pica SC', serif;
+  font-size: 50px;
   font-weight: bolder;
 }
 
-@media screen and (max-width: 1024px) {
+#green {color: #009246;}
+#white {color: #f2f2f2;}
+#red {color: #ce2b37;}
+
+
+/*@media screen and (max-width: 1024px) {
   .container.header p {
     font-size: 75px;
   }
@@ -45,12 +50,20 @@ h1, h2, h4 {
 
 @media screen and (max-width: 320px) {
   .container.header p {
-    font-size: 25px;
+    font-size: 50px;
   }
-}
+}*/
 
 .btn {
   font-size: 14px;
+}
+
+.btn-danger {
+  background-color: #ce2b37;
+}
+
+.btn-success {
+  background-color: #009246; 
 }
 
 #thank-you {
