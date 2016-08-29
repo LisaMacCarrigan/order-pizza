@@ -41,6 +41,10 @@ h1, h2, h4 {
   }
 }
 
+#thank-you {
+  display: none;
+}
+
 .col-sm-4 {
   background-color: white;
   padding: 0px 10px 10px 10px;

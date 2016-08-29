@@ -38,15 +38,12 @@ $(document).ready(function() {
     var inputtedSize = $("input:radio[name=size]:checked").val();
     $("#chosen-size-displayed").text(inputtedSize).val();
 
-
-
     // Create an array of checked toppings
     var toppingsArray = [];
     $(".toppings input[type='checkbox']:checked").each(function() {
         toppingsArray.push($(this).val());
     });
-
-    $("#chosen-toppings-displayed").append(toppingsArray).val(); // test
+    $("#chosen-toppings-displayed").append(toppingsArray.join(', ')).val();
     console.log(toppingsArray);
 
     // The number of toppings selected
@@ -59,6 +56,12 @@ $(document).ready(function() {
     $("#calculated-cost").text("$ " + newPizza.pizzaCost);
 
   }); //end submit
+
+  $("#submit-order").click(function() {
+    $(".col-sm-8").fadeOut("slow");
+    $(".col-sm-4").fadeOut("slow");
+  });
+
 
 
 }); //end ready
