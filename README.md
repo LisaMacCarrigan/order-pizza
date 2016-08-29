@@ -33,7 +33,7 @@ _This is a website for a pizza company where a user can choose one or more indiv
 #### 3. A customer can see the cost of their order when they press button "Add to My Order"
 
 * Example Input: Click/press "Add to My Order"
-* Example Output: Show the Order Total
+* Example Output: Show the Order Total ($0.00)
 
 #### 4. The order is submitted when the customer presses "Submit Order"
 

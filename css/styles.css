@@ -1,3 +1,11 @@
+/*- Look into bootstrap button input reset for resetting form after submission*/
+/*Consider using glyph in navbar, or merely svg in img folder. ":before"*/
+/*Add hover to buttons*/
+/*Note: Containers, by default, have 15 px left and right padding*/
+/*@media classes might be able to take care of media query*/
+
+
+
 body {
   background-image: url("../img/stucco.jpg");
 }

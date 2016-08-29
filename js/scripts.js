@@ -52,8 +52,9 @@ $(document).ready(function() {
     var newPizza = new Pizza(toppingsArray, inputtedSize);
     //Take inputtedSize value and pass into function that will determine basePrice
     newPizza.totalCost(); // REMEMBER TO PARSE FLOAT***
-    console.log(newPizza.pizzaCost);
-    $("#calculated-cost").text("$ " + newPizza.pizzaCost);
+
+    var cost = parseFloat(newPizza.pizzaCost).toFixed(2);
+    $("#calculated-cost").text("$ " + cost);
 
   }); //end submit
 
