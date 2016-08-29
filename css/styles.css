@@ -1,18 +1,6 @@
-/*- Look into bootstrap button input reset for resetting form after submission*/
-/*Consider using glyph in navbar, or merely svg in img folder. ":before"*/
-/*Add hover to buttons*/
-/*Note: Containers, by default, have 15 px left and right padding*/
-/*@media classes might be able to take care of media query*/
-
-
-
 body {
-  background-image: url("../img/stucco.jpg");
+  background-image: url("../img/pizza.jpg");
 }
-
-/*#tomato {
-  display: inline;
-}*/
 
 h1, h2, h4 {
   font-family: 'Abel', sans-serif;
@@ -20,8 +8,8 @@ h1, h2, h4 {
 }
 
 .navbar {
-  margin-bottom: 0px;
   border-radius: 0px;
+  /*margin-bottom: 10px;*/
 }
 
 .container.header p {
@@ -35,6 +23,43 @@ h1, h2, h4 {
 #white {color: #f2f2f2;}
 #red {color: #ce2b37;}
 
+.btn {
+  font-size: 14px;
+}
+
+#thank-you {
+  display: none;
+}
+
+.col-sm-8 {
+  background-color: white;
+  border-radius: 10px;
+}
+
+.col-sm-8 h1 {
+  padding-top: 5px;
+}
+
+.col-sm-8 h4 {
+  color: black;
+}
+
+.col-sm-3 {
+  background-color: #222;
+  border-radius: 10px;
+  border-color: #080808;
+  padding: 0px 10px 10px 10px;
+  max-width: 768px;
+}
+
+.col-sm-3 #current-order-details h2, h4 {
+  color: #f2f2f2;
+  padding-top: 5px;
+}
+
+#current-order-details p {
+  color: #EC4D46;
+}
 
 /*@media screen and (max-width: 1024px) {
   .container.header p {
@@ -54,30 +79,8 @@ h1, h2, h4 {
   }
 }*/
 
-.btn {
-  font-size: 14px;
-}
-
-.btn-danger {
-  background-color: #ce2b37;
-}
-
-.btn-success {
-  background-color: #009246; 
-}
-
-#thank-you {
-  display: none;
-}
-
-.col-sm-4 {
-  background-color: white;
-  padding: 0px 10px 10px 10px;
-  margin-top: 15px;
-  float: right;
-
-}
-
-#current-order-details p {
-  color: #d43f3a;
-}
+/*- Look into bootstrap button input reset for resetting form after submission*/
+/*Consider using glyph in navbar, or merely svg in img folder. ":before"*/
+/*Add hover to buttons*/
+/*Note: Containers, by default, have 15 px left and right padding*/
+/*@media classes might be able to take care of media query*/
