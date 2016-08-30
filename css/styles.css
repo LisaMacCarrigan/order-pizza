@@ -1,22 +1,35 @@
 body {
   background-image: url("../img/pizza.jpg");
+  font-family: 'Abel', sans-serif;
 }
 
-h1, h2, h4 {
-  font-family: 'Abel', sans-serif;
+@font-face {
+  font-family: myHeader;
+  src: url("../fonts/pepperoni_pizza.ttf");
+}
+
+h1, h2, h4, {
   font-weight: bolder;
 }
 
 .navbar {
   border-radius: 0px;
-  /*margin-bottom: 10px;*/
+}
+
+.container {
+  max-width: 90%;
+}
+
+.row {
+  padding-bottom: 10px;
 }
 
 .container.header p {
   color: #f2f2f2;
-  font-family: 'IM Fell Double Pica SC', serif;
-  font-size: 50px;
+  font-family: myHeader, sans-serif;
+  font-size: 70px;
   font-weight: bolder;
+  text-align: center;
 }
 
 #green {color: #009246;}
@@ -25,59 +38,62 @@ h1, h2, h4 {
 
 .btn {
   font-size: 14px;
+  font-weight: bolder;
 }
 
-#thank-you {
-  display: none;
-}
-
-.col-sm-8 {
+.col-md-9 {
   background-color: white;
   border-radius: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
 }
 
-.col-sm-8 h1 {
-  padding-top: 5px;
+.col-md-9 h1 {
+  padding-top: 10px;
+  font-family: myHeader;
+  text-align: center;
 }
 
-.col-sm-8 h4 {
+.col-md-9 h2 {
+  font-family: myHeader;
+}
+
+.col-md-9 h4 {
   color: black;
+  text-align: justify;
 }
 
-.col-sm-3 {
+.col-md-3 {
   background-color: #222;
   border-radius: 10px;
   border-color: #080808;
-  padding: 0px 10px 10px 10px;
-  max-width: 768px;
+  padding-bottom: 10px;
 }
 
-.col-sm-3 #current-order-details h2, h4 {
+#current-order-details h2 {
+  font-family: myHeader;
+  color: #009246;
+}
+
+#current-order-details h4 {
   color: #f2f2f2;
-  padding-top: 5px;
 }
 
 #current-order-details p {
   color: #EC4D46;
 }
 
-/*@media screen and (max-width: 1024px) {
-  .container.header p {
-    font-size: 75px;
-  }
-}
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
   .container.header p {
     font-size: 50px;
   }
-}
 
 @media screen and (max-width: 320px) {
   .container.header p {
-    font-size: 50px;
+    font-size: 35px;
   }
-}*/
+}
+
 
 /*- Look into bootstrap button input reset for resetting form after submission*/
 /*Consider using glyph in navbar, or merely svg in img folder. ":before"*/

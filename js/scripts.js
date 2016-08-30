@@ -9,19 +9,19 @@ function Pizza(toppings, size) {
 // A prototype method that calculates the total cost of the pizza based on the size and the number of toppings.
 Pizza.prototype.totalCost = function() {
   if (this.pizzaSize === "Small") {
-    this.pizzaCost += 8 + (this.pizzaToppings.length * 0.50);
+    this.pizzaCost += 8 + (this.pizzaToppings.length * 0.75);
   }
   else if (this.pizzaSize === "Medium") {
-    this.pizzaCost += 10 + (this.pizzaToppings.length * 0.50);
+    this.pizzaCost += 10 + (this.pizzaToppings.length * 0.75);
   }
   else if (this.pizzaSize === "Large") {
-    this.pizzaCost += 12 + (this.pizzaToppings.length * 0.50);
+    this.pizzaCost += 12 + (this.pizzaToppings.length * 0.75);
   }
   else if (this.pizzaSize === "Extra-large") {
-    this.pizzaCost += 14 + (this.pizzaToppings.length * 0.50);
+    this.pizzaCost += 14 + (this.pizzaToppings.length * 0.75);
   }
   else if (this.pizzaSize === "Sicilian") {
-    this.pizzaCost += 16 + (this.pizzaToppings.length * 0.50);
+    this.pizzaCost += 16 + (this.pizzaToppings.length * 0.75);
   }
 }; //end function
 
