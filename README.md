@@ -12,7 +12,7 @@ _This is a website for a pizza company where a user can choose one or more indiv
 
 #### 1. A customer can select one pizza size and see their selected pizza size displayed.
 
-* Example Input: Select radio button option "Small 10"..from $8.00" and press button "Add to Order"
+* Example Input: Select radio button option "Small 10" ($8.00)" and press button "Add to Order"
 * Example Output: Current Order:
                   Selected Size:
                   Small
@@ -33,7 +33,7 @@ _This is a website for a pizza company where a user can choose one or more indiv
 #### 3. A customer can see the cost of their order when they press button "Add to Order"
 
 * Example Input: Click/press "Add to Order"
-* Example Output: Show the Order Total ($0.00)
+* Example Output: Order Total ($0.00)
 
 #### 4. The order is submitted when the customer presses "Submit Order"
 

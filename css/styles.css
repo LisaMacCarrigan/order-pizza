@@ -21,7 +21,7 @@ h1, h2, h4, {
 }
 
 .row {
-  padding-bottom: 10px;
+  padding: 10px;
 }
 
 .container.header p {
@@ -64,7 +64,7 @@ h1, h2, h4, {
 }
 
 .col-md-3 {
-  background-color: #222;
+  background-color: white;
   border-radius: 10px;
   border-color: #080808;
   padding-bottom: 10px;
@@ -72,11 +72,11 @@ h1, h2, h4, {
 
 #current-order-details h2 {
   font-family: myHeader;
-  color: #009246;
+  color: black;
 }
 
 #current-order-details h4 {
-  color: #f2f2f2;
+  color: black;
 }
 
 #current-order-details p {

@@ -65,10 +65,8 @@ $(document).ready(function() {
     $("#calculated-cost").text("");
   });
 
-  $("#submit-order").click(function() {
-    $(".col-sm-8").fadeOut("slow");
-    $(".col-sm-4").fadeOut("slow");
-  });
+  // $("#submit-order").click(function() {
+  // });
 
 
 
