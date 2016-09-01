@@ -41,38 +41,36 @@ h1, h2, h4, {
   font-weight: bolder;
 }
 
-.col-md-9 {
+button#submit-order {
+  margin-bottom: 10px;
+}
+
+.col-md-12 {
   background-color: white;
   border-radius: 10px;
   margin-right: 10px;
   margin-bottom: 10px;
 }
 
-.col-md-9 h1 {
+.col-md-12 h1 {
   padding-top: 10px;
   font-family: myHeader;
   text-align: center;
 }
 
-.col-md-9 h2 {
+.col-md-12 h2 {
   font-family: myHeader;
 }
 
-.col-md-9 h4 {
+.col-md-12 h4 {
   color: black;
   text-align: justify;
-}
-
-.col-md-3 {
-  background-color: white;
-  border-radius: 10px;
-  border-color: #080808;
-  padding-bottom: 10px;
 }
 
 #current-order-details h2 {
   font-family: myHeader;
   color: black;
+  padding-top: 10px;
 }
 
 #current-order-details h4 {
