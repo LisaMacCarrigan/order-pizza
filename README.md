@@ -17,7 +17,14 @@ _This is a website for a pizza company where a user can choose one or more indiv
                   Selected Size:
                   Small
 
-#### 2. A customer can select one or more toppings and see their selected toppings displayed.
+#### 2. A customer can select one pizza size and see the price displayed for the selected size.
+
+* Example Input: Select radio button option "Small 10" ($8.00)" and press button "Add to Order"
+* Example Output: Current Order:
+                  Order Total:
+                  $8.00
+
+#### 3. A customer can select one or more toppings and see their selected toppings displayed.
 
 * Example Input #1: Select "Bacon" from Toppings and press button "Add to Order"
 * Example Output #1: Current Order:
@@ -30,12 +37,19 @@ _This is a website for a pizza company where a user can choose one or more indiv
                   Bacon
                   Broccoli
 
-#### 3. A customer can see the cost of their order when they press button "Add to Order"
+#### 4. A customer can select one or more toppings and see the price of the selected toppings factored in to the total order cost.
+
+* Example Input: Select "Bacon" and "Broccoli" from Toppings, select radio button option "Small 10" ($8.00)", and press button "Add to Order"
+* Example Output: Current Order:
+                  Order Total:
+                  $9.50
+
+#### 5. A customer can see the cost of their order when they press button "Add to Order"
 
 * Example Input: Click/press "Add to Order"
 * Example Output: Order Total ($0.00)
 
-#### 4. The order is submitted when the customer presses "Submit Order"
+#### 6. The order is submitted when the customer presses "Submit Order"
 
 * Example Input: Click/press "Submit Order"
 * Example Output: Display the submitted order summary

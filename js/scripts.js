@@ -47,7 +47,6 @@ $(document).ready(function() {
     $("#chosen-toppings-displayed").append(toppingsArray.join(', ')).val();
 
     // The number of toppings selected
-    var toppingsQuantity = toppingsArray.length;
 
     var newPizza = new Pizza(toppingsArray, inputtedSize);
     //Take inputtedSize value and pass into function that will determine basePrice
