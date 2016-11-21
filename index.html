@@ -26,10 +26,9 @@
           <hr>
           <form id="pizza-order">
             <div class="row">
-              <div class="col-xs-6">
+              <div class="col-xs-5">
                 <div class="form-group toppings">
                   <p class="topping-size-head">Toppings</p>
-                  <p><strong>$.75 each</strong></p>
                   <div class="checkbox">
                     <label><input type="checkbox" name="topping" value="Bacon">Bacon</label>
                   </div>
@@ -51,7 +50,7 @@
                 </div>
               </div>
 
-              <div class="col-xs-6">
+              <div class="col-xs-7">
                 <div class="form-group size">
                 <p class="topping-size-head">Size</p>
                   <div class="radio">
@@ -70,10 +69,14 @@
                     <label><input type="radio" name="size" value="Sicilian">Sicilian 18" ($16.00)</label>
                   </div>
                 </div>
-                <button id="input-order" type="submit" class="btn btn-danger btn-sm">Add to Order</button>
-                <input id="reset-order" class="btn btn-default btm-sm" type="reset">
               </div>
             </div>
+            <p><em>$.75 per selected topping</em></p>
+            <div class="input-reset-container">
+              <input id="reset-order" class="btn btn-default btm-sm" type="reset">
+              <button id="input-order" type="submit" class="btn btn-danger btn-sm">Add to Order</button>
+            </div>
+
           </form>
         </div>
         <div class="col-md-12 current-order-content">
