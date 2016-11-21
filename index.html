@@ -54,35 +54,35 @@
                 <div class="form-group size">
                 <p class="topping-size-head">Size</p>
                   <div class="radio">
-                    <label><input type="radio" name="size" value="Small" required>Small 10" ($8.00)</label>
+                    <label><input type="radio" name="size" value="Small" required>Sm 10" ($8.00)</label>
                   </div>
                   <div class="radio">
-                    <label><input type="radio" name="size" value="Medium">Medium 12" ($10.00)</label>
+                    <label><input type="radio" name="size" value="Medium">Med 12" ($10.00)</label>
                   </div>
                   <div class="radio">
-                    <label><input type="radio" name="size" value="Large">Large 14" ($12.00)</label>
+                    <label><input type="radio" name="size" value="Large">Lg 14" ($12.00)</label>
                   </div>
                   <div class="radio">
-                    <label><input type="radio" name="size" value="Extra-large">Extra-large 16" ($14.00)</label>
+                    <label><input type="radio" name="size" value="Extra-large">XL 16" ($14.00)</label>
                   </div>
                   <div class="radio">
-                    <label><input type="radio" name="size" value="Sicilian">Sicilian 18" ($16.00)</label>
+                    <label><input type="radio" name="size" value="Sicilian">Sicilian ($16.00)</label>
                   </div>
                 </div>
               </div>
             </div>
-            <p><em>$.75 per selected topping</em></p>
             <div class="input-reset-container">
+              <p><em>Note: $.75 per selected topping</em></p>
               <input id="reset-order" class="btn btn-default btm-sm" type="reset">
               <button id="input-order" type="submit" class="btn btn-danger btn-sm">Add to Order</button>
             </div>
 
           </form>
         </div>
-        <div class="col-md-12 current-order-content">
+        <div class="col-md-12 current-order-container">
           <div id="order">
-            <div id="current-order-details">
             <p class="order-head">Current Order:</p>
+            <div id="current-order-details">
               <h4>Selected Size:</h4>
                 <p id="chosen-size-displayed"></p>
               <h4>Selected Toppings:</h4>
@@ -92,7 +92,9 @@
                 <p id="calculated-cost"></p>
             </div>
           </div>
-          <button id="submit-order" class="btn btn-success">Submit Order</button>
+          <div class="submit-order-container">
+            <button id="submit-order" class="btn btn-success">Submit Order</button>
+          </div>
         </div>
       </div>
     </div>

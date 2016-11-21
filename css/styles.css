@@ -59,8 +59,7 @@ p.header {
 .topping-size-head {
   padding-top: 5px;
   font-family: myHeader;
-  font-size: 1.85em;
-  text-align: center;
+  font-size: 1.75em;
 }
 
 .btn {
@@ -89,6 +88,18 @@ p.header {
   margin-bottom: 10px;
 }
 
+.current-order-container {
+  margin-bottom: 0;
+  border-radius: 10px 10px 0px 0px;
+}
+
+#current-order-details {
+  width: 70%;
+  margin-right: 15%;
+  margin-left: 15%;
+}
+
+
 .order-head {
   padding-top: 10px;
   font-family: myHeader;
@@ -96,13 +107,11 @@ p.header {
   text-align: center;
 }
 
-.col-md-12 h4 {
-  color: black;
-  text-align: justify;
-}
-
-#current-order-details h4 {
-  color: black;
+.submit-order-container {
+  text-align: center;
+  width: 80%;
+  margin-right: 10%;
+  margin-left: 10%;
 }
 
 
