@@ -14,21 +14,22 @@
   <body>
     <nav class="navbar navbar-inverse navbar-top">
       <div class="container header">
-        <!-- <img id="tomato" src="img/svg/tomato.svg"> -->
-        <p><span id="green">Lisa</span><span id="white">'s Pi</span><span id="red">zzas</span></p>
+        <p class="page-title"><span id="green">Lisa</span><span id="white">'s Pi</span><span id="red">zzas</span></p>
       </div>
     </nav>
+
     <div class="container">
       <div class="row">
         <div class="col-md-12 main-content">
-          <h1>Choose Your Options</h1>
-          <h4>Every pizza comes standard with Nonni's tomato sauce and our famous blend of cheeses. We support local farmers and use only the finest, freshest, sustainably-sourced ingredients.</h4>
+          <p class="header">Choose Your Options</p>
+          <p class="blurb">Every pizza is prepared with Nonni's tomato sauce and our famous blend of cheeses. We support local farmers and use only the finest, freshest, sustainably-sourced ingredients.</p>
+          <hr>
           <form id="pizza-order">
             <div class="row">
-              <div class="col-xs-5">
+              <div class="col-xs-6">
                 <div class="form-group toppings">
-                  <h2>Toppings</h2>
-                  <h5><strong>$.75 extra per topping</strong></h5>
+                  <p class="topping-size-head">Toppings</p>
+                  <p><strong>$.75 each</strong></p>
                   <div class="checkbox">
                     <label><input type="checkbox" name="topping" value="Bacon">Bacon</label>
                   </div>
@@ -49,12 +50,10 @@
                   </div>
                 </div>
               </div>
-              <div class="col-xs-1">
-              </div>
 
-              <div class="col-xs-6 pull-right">
+              <div class="col-xs-6">
                 <div class="form-group size">
-                <h2>Size</h2>
+                <p class="topping-size-head">Size</p>
                   <div class="radio">
                     <label><input type="radio" name="size" value="Small" required>Small 10" ($8.00)</label>
                   </div>
