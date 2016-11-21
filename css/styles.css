@@ -89,8 +89,11 @@ p.header {
   margin-bottom: 10px;
 }
 
-.col-md-12 h2 {
+.order-head {
+  padding-top: 10px;
   font-family: myHeader;
+  font-size: 1.85em;
+  text-align: center;
 }
 
 .col-md-12 h4 {
@@ -98,20 +101,9 @@ p.header {
   text-align: justify;
 }
 
-#current-order-details p {
-  font-family: myHeader;
-  color: black;
-  padding-top: 10px;
-}
-
 #current-order-details h4 {
   color: black;
 }
-
-#current-order-details p {
-  color: #EC4D46;
-}
-
 
 
 /*- Look into bootstrap button input reset for resetting form after submission*/
