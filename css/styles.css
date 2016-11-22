@@ -1,5 +1,5 @@
 body {
-  background-image: url("../img/pizza.jpg");
+  background-image: url("../img/pizza2.jpg");
   font-family: 'Abel', sans-serif;
 }
 
@@ -12,8 +12,19 @@ body {
   border-radius: 0px;
 }
 
+.navbar-inverse {
+  background-color: #000000;
+  border-color: #000000;
+}
+
 .container {
   width: 90%;
+}
+
+.main-content {
+  border-style: solid;
+  border-width: thin;
+  border-color: #e7b61f;
 }
 
 p.page-title {
@@ -33,7 +44,7 @@ p.page-title {
 }
 
 #green {color: #009246;}
-#white {color: #f2f2f2;}
+#white {color: #FFFAFA;}
 #red {color: #ce2b37;}
 
 
@@ -83,35 +94,44 @@ p.header {
 }
 
 .col-md-12 {
-  background-color: white;
-  border-radius: 10px;
+  background-color: #FFFAFA;
+  border-radius: 5px;
   margin-bottom: 10px;
 }
 
 .current-order-container {
   margin-bottom: 0;
-  border-radius: 10px 10px 0px 0px;
+  border-radius: 5px 5px 0px 0px;
+  border-style: solid;
+  border-width: thin;
+  border-color: #e7b61f;
+  width: 60%;
+  float: right;
 }
 
 #current-order-details {
-  width: 70%;
-  margin-right: 15%;
-  margin-left: 15%;
+  width: 90%;
+  margin-right: 5%;
+  margin-left: 5%;
+}
+
+.current-order-headers {
+  font-weight: bold;
 }
 
 
 .order-head {
   padding-top: 10px;
   font-family: myHeader;
-  font-size: 1.85em;
+  font-size: 1.75em;
   text-align: center;
 }
 
 .submit-order-container {
   text-align: center;
-  width: 80%;
-  margin-right: 10%;
-  margin-left: 10%;
+  width: 90%;
+  margin-right: 5%;
+  margin-left: 5%;
 }
 
 
